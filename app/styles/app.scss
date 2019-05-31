@@ -1,0 +1,122 @@
+@import 'moz-theme';
+
+
+$fs-xx-large: 3em;
+$fs-x-large: 2.2em;
+$fs-large: 1.8em;
+$fs-medium: 1.4em;
+$fs-small: 1.2em;
+$fs-x-small: 0.7em;
+$fs-xx-small: 0.5em;
+
+$accent: #eeaaee;
+
+
+.clearfix {
+  &:before, &:after {
+    content: "";
+    display: table-cell;
+    clear: both;
+  }
+}
+
+.left {
+  float: left;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.right {
+  float: right;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+.fs-large {
+  font-size: $fs-large;
+}
+
+.fs-medium {
+  font-size: $fs-medium;
+}
+
+.fs-small {
+  font-size: $fs-small;
+}
+
+.fs-x-small {
+  font-size: $fs-x-small;
+}
+
+.fs-xx-small {
+  font-size: $fs-xx-small;
+}
+
+.fs-xx-large{
+  font-size: $fs-xx-large;
+}
+
+.fs-x-large{
+  font-size: $fs-x-large;
+}
+
+.block {
+  background-color: $accent;
+  width: 33%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+
+  &--medium {
+    width: 12em;
+  }
+}
+
+.title-footer {
+  justify-content: flex-end;
+  position: relative;
+  bottom: -1em;
+}
+
+.logo-title {
+  position: relative;
+
+  &:before {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    width: 1em;
+    height: 1em;
+    top: 0;
+    left: -1em;
+    background-image: url(/assets/images/simplabs-logo.png);
+  }
+}
+
+.twitter-title {
+  &:before {
+    background-image: url(/assets/images/twitter.png);
+    width: 0.9em;
+    height: 0.9em;
+    top: 0.2em;
+    left: -1em;
+  }
+}
+
+.job-title {
+  &:before {
+    background-image: url(/assets/images/simplabs-logo.svg);
+    width: 0.9em;
+    height: 0.9em;
+    top: 0.2em;
+    left: -1em;
+  }
+}
