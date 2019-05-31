@@ -3,6 +3,6 @@ notes: |
   Title Slide: Comics for Literally Everyone
 ---
 
-## Print vs. Digital Comics
+## The Untapped Potential of Web Comics
 
-by JJ 🎉
+<!-- .slide: data-background-image="/assets/images/screen-read.jpg" -->

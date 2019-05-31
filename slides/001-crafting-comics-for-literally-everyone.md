@@ -15,3 +15,5 @@ notes: |
     </div>
   </div>
 </footer>
+
+<!-- .slide: data-background-image="/assets/images/twitter.png" -->

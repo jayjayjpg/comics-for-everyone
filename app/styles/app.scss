@@ -5,11 +5,12 @@ $fs-xx-large: 3em;
 $fs-x-large: 2.2em;
 $fs-large: 1.8em;
 $fs-medium: 1.4em;
-$fs-small: 1.2em;
+$fs-small: 0.9em;
 $fs-x-small: 0.7em;
 $fs-xx-small: 0.5em;
 
 $accent: #eeaaee;
+$counter-accent: #4444aa;
 
 
 .clearfix {
@@ -37,32 +38,53 @@ $accent: #eeaaee;
   align-items: flex-end;
 }
 
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+
+  & > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .fs-large {
-  font-size: $fs-large;
+  font-size: $fs-large !important;
 }
 
 .fs-medium {
-  font-size: $fs-medium;
+  font-size: $fs-medium !important;
 }
 
 .fs-small {
-  font-size: $fs-small;
+  font-size: $fs-small !important;
 }
 
 .fs-x-small {
-  font-size: $fs-x-small;
+  font-size: $fs-x-small !important;
 }
 
 .fs-xx-small {
-  font-size: $fs-xx-small;
+  font-size: $fs-xx-small !important;
 }
 
 .fs-xx-large{
-  font-size: $fs-xx-large;
+  font-size: $fs-xx-large !important;
 }
 
 .fs-x-large{
-  font-size: $fs-x-large;
+  font-size: $fs-x-large !important;
 }
 
 .block {
@@ -73,6 +95,10 @@ $accent: #eeaaee;
 
   &--medium {
     width: 12em;
+  }
+
+  &--long {
+    width: 18em;
   }
 }
 
@@ -118,5 +144,75 @@ $accent: #eeaaee;
     height: 0.9em;
     top: 0.2em;
     left: -1em;
+  }
+}
+
+.bubble {
+  position: absolute;
+  background-color: #fff;
+  padding: 3em 1.5em;
+  border-radius: 55% 60% 50% 50% / 60% 60% 40% 40%;
+  border: 3px solid #212121;
+  color: #212121;
+  font-size: $fs-small;
+  position: absolute;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  bottom: -2em;
+  right: -1em;
+  z-index: 99;
+
+  &.top {
+    top: -1em;
+    left: -1.5em;
+    bottom: auto;
+    right: auto;
+  }
+}
+
+.reveal pre {
+  width: 100%;
+}
+
+.hljs {
+  font-size: $fs-medium;
+}
+
+.demo-font-1 {
+  animation: grow ease-in 2s;
+  animation-fill-mode: forwards;
+  color: $counter-accent;
+}
+
+.demo-font-2 {
+  animation: contrastier ease-in 4s;
+  animation-fill-mode: forwards;
+  color: #eaeaea;
+}
+
+@keyframes grow {
+  0% {
+    font-size: 10px
+  }
+  100% {
+    font-size: 36px;
+  }
+}
+
+@keyframes contrastier {
+  0% {
+    color: #eaeaea;
+  }
+  100% {
+    color: #484848;
+  }
+}
+
+.reveal {
+  text-align: center;
+  justify-content: center;
+
+  img.flat {
+    box-shadow: none;
+    border: none;
   }
 }
