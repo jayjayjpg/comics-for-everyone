@@ -1,10 +1,6 @@
 ---
 notes: |
-  But maybe you actually didn't.
+  But maybe you actually didn't actually read books.
 ---
 
-## Maybe you didn't actually read comics when you were young.
-
-<div class="clearfix flex">
-  <span class="center fs-xx-large">🤔</span>
-</div>
+<!-- .slide: data-background-image="/assets/images/blankbook.jpg" -->

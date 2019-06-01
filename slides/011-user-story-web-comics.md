@@ -3,7 +3,7 @@ notes: |
   Title Slide: Comics for Literally Everyone
 ---
 
-## Screenreader Driven Story Telling
+## A Tech Stack for a Web Comic App
 
 <div class="clearfix">
 <div class="left" style="width:50%">

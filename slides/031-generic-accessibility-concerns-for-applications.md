@@ -1,6 +1,6 @@
 ---
 notes: |
-  Title Slide: Comics for Literally Everyone
+  Rethinking Accessibility of Web Applications
 ---
 
 <!-- .slide: data-background-image="/assets/images/dont.jpeg" -->

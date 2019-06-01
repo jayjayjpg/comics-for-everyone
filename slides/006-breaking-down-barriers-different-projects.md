@@ -16,6 +16,6 @@ notes: |
   </div>
   <div class="block block--medium clearfix flex fragment fade-up">
     <img src="/assets/images/comics-empower.png" alt="Logo of Comics Empower" />
-    <small class="right fs-xx-small top bubble fragment fade-up"><a href="https://twitter.com/ComicsEmpower" title="Link to official Twitter account of Comics Empower">Guy Hassan, Comics Empower</a></small>
+    <small class="right fs-xx-small bottom bubble fragment fade-up"><a href="https://twitter.com/ComicsEmpower" title="Link to official Twitter account of Comics Empower">Guy Hasson, Comics Empower</a></small>
   </div>
 </div>

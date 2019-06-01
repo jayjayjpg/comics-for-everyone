@@ -3,7 +3,7 @@ notes: |
   Title Slide: Comics for Literally Everyone
 ---
 
-## Building a Web Application Featuring a Comic
+## Accessibility Concerns for Screen Reader Users
 
 - Providing an embedded transcript of the story
 - from one panel to another panel

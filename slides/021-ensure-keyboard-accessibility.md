@@ -10,6 +10,7 @@ notes: |
 - Semantic HTML <!-- .element: class="fragment fade-up" -->
 - Correct Heading Hierarchy <!-- .element: class="fragment fade-up" -->
 - Landmarks <!-- .element: class="fragment fade-up" -->
+- Page Navigation and URL Changes <!-- .element: class="fragment fade-up" -->
 
 
 <!-- .slide: data-transition="fade-in" -->

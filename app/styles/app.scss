@@ -9,8 +9,15 @@ $fs-small: 0.9em;
 $fs-x-small: 0.7em;
 $fs-xx-small: 0.5em;
 
-$accent: #eeaaee;
+$accent: #efccef;
 $counter-accent: #4444aa;
+$grey: #dadada;
+$old-grey: #F6F4EC;
+
+body {
+  background-image: linear-gradient(to bottom, $grey, $old-grey 60%);
+  background-color: $grey;
+}
 
 
 .clearfix {
@@ -88,13 +95,23 @@ $counter-accent: #4444aa;
 }
 
 .block {
+  display: block;
+  position: relative;
+  border: 10px solid #efefef;
+  background-color: rgba(22, 22, 22, 0.7);
+  width: 100%;
+  height: auto;
+  padding: 0.25em;
+  box-shadow: 15px 15px 2px rgba(22, 22, 22, 0.8);
+
   background-color: $accent;
   width: 33%;
   padding: 0.5em;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
 
   &--medium {
     width: 12em;
+    height: auto;
   }
 
   &--long {
@@ -219,4 +236,8 @@ $counter-accent: #4444aa;
 
 .reveal h1 {
   font-size: $fs-large;
+}
+
+.reveal .controls button {
+  color: $accent !important;
 }

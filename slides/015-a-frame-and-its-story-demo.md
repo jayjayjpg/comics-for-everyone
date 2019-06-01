@@ -7,7 +7,7 @@ notes: |
 
 
 <div class="clearfix" style="width: 100%">
-  <iframe id="inlineFrameExample" title="Diamanias web comic loaded in an iframe into the presentation" src="https://jessica-jordan.github.io/diamanias/#/chapters/1" tabindex="0" style="width: 100%; min-height: 400px;"></iframe>
+  <iframe class="block" id="inlineFrameExample" title="Diamanias web comic loaded in an iframe into the presentation" src="https://jessica-jordan.github.io/diamanias/#/chapters/1" tabindex="0" style="width: 100%; min-height: 400px; padding: 0;"></iframe>
 </div>
 
 <!-- .slide: data-transition="fade-in" -->

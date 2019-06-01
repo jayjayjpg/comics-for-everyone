@@ -3,9 +3,11 @@ notes: |
   Title Slide: Comics for Literally Everyone
 ---
 
-# Crafting Comics for Literally Everyone
+<div class="clearfix block block--long">
+  <h1>Crafting Comics for Literally Everyone</h1>
+</div>
 
-<footer class="clearfix bottom title-footer">
+<footer class="clearfix bottom title-footer" style="margin-top: 3em;">
   <div class="right bottom block block--medium">
     <div class="fs-x-small">
        <p class="fs-small">Jessica Jordan ✨</p>
@@ -16,4 +18,4 @@ notes: |
   </div>
 </footer>
 
-<!-- .slide: data-background-image="/assets/images/twitter.png" -->
+<!-- .slide: data-background-image="/assets/images/bubbles.gif" -->
