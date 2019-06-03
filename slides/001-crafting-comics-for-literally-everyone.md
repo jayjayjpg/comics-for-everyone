@@ -18,4 +18,4 @@ notes: |
   </div>
 </footer>
 
-<!-- .slide: data-background-image="/assets/images/bubbles.gif" -->
+<!-- .slide: data-background-image="./assets/images/bubbles.gif" -->
