@@ -5,7 +5,7 @@ notes: |
 
 # Thank You ✨  <!-- .element: style="color: #fff;" -->
 
-<div class="block clearfix block--long" style="font-size: 20px; width: 70%;">
+<div class="block clearfix block--long covered no-img" style="font-size: 20px; width: 70%;">
   <strong>A special thank you goes to</strong>
   <ul>
     <li>✨ Guy Hasson from <a href="https://twitter.com/ComicsEmpower">Comics Empower</a> ✨</li>
@@ -16,7 +16,7 @@ notes: |
 </div>
 
 <footer class="clearfix bottom title-footer">
-  <div class="right bottom block block--medium">
+  <div class="right bottom block block--medium covered no-img">
     <div class="fs-x-small">
        <p class="fs-small">Jessica Jordan ✨</p>
        <p><a class="twitter-title logo-title" href="https://twitter.com/jjordan_dev">@jjordan_dev</a></p>

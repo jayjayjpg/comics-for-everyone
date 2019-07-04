@@ -10,9 +10,11 @@ notes: |
     <img width="200" alt="Single frame from Diamanias comic: A person struggles to keep their balance on a boat on stormy sea. They shout: Noooo!" src="/assets/images/frame.png" />
   </div>
   <div class="right" style="width:70%">
-    <pre><code class="html" data-line-numbers="1-4" data-trim>// comic.html
+    <pre><code class="html" data-line-numbers="3-5" data-trim>// comic.html
 <article class="comic-panel">
-  <span role="img" aria-label="The person struggles to..."></span>
+  &lt;span role="img"
+        aria-label="A person struggles..."&gt;
+  &lt;/span&gt;
 </article>
 </code></pre>
   </div>

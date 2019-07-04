@@ -5,14 +5,17 @@ $fs-xx-large: 3em;
 $fs-x-large: 2.2em;
 $fs-large: 1.8em;
 $fs-medium: 1.4em;
+$fs-smallish: 1.2em;
 $fs-small: 0.9em;
 $fs-x-small: 0.7em;
 $fs-xx-small: 0.5em;
 
 $accent: #efccef;
 $counter-accent: #4444aa;
-$grey: #dadada;
-$old-grey: #F6F4EC;
+$grey: #EDDEA4;
+$old-grey: #EEDFA5;
+$text-color: #160F29;
+$frame-border-color: #efefef;
 
 body {
   background-image: linear-gradient(to bottom, $grey, $old-grey 60%);
@@ -97,25 +100,69 @@ body {
 .block {
   display: block;
   position: relative;
-  border: 10px solid #efefef;
-  background-color: rgba(22, 22, 22, 0.7);
+  border: 10px solid $frame-border-color;
   width: 100%;
   height: auto;
   padding: 0.25em;
   box-shadow: 15px 15px 2px rgba(22, 22, 22, 0.8);
-
-  background-color: $accent;
   width: 33%;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border-radius: 0.2em;
+  background-color: transparent;
+  opacity: 1;
+  margin: .2em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    background-image: url('./images/bubbles.gif');
+    opacity: .9;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &.covered {
+    background-color: $accent;
+
+    &:before {
+      content: "";
+      opacity: .1;
+    }
+  }
+
+  &.covered--bg {
+    background-color: $accent;
+  }
+
+  &.no-img {
+    &:before {
+      background-image: none;
+    }
+  }
 
   &--medium {
     width: 12em;
     height: auto;
+    min-height: 4em;
   }
 
   &--long {
     width: 18em;
+  }
+
+  &--xtra-long {
+    width: 100%;
+  }
+
+  &--full-height {
+    height: 60vh;
   }
 }
 
@@ -173,16 +220,35 @@ body {
   color: #212121;
   font-size: $fs-small;
   position: absolute;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
   bottom: -2em;
   right: -1em;
   z-index: 99;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive !important;
 
   &.top {
     top: -1em;
     left: -1.5em;
     bottom: auto;
     right: auto;
+  }
+
+  &.topish {
+    top: 2em;
+    left: -1.5em;
+    bottom: auto;
+    right: auto;
+  }
+
+  &.tall {
+    border-radius: 70% 70% 60% 90% / 70% 60% 50% 50%;
+    padding: 1em 1em;
+    width: 6em;
+  }
+
+  &.right {
+    right: -1em;
+    left: auto;
   }
 }
 
@@ -232,12 +298,103 @@ body {
     box-shadow: none;
     border: none;
   }
+
+  section {
+    img {
+      border: 6px solid $frame-border-color;
+      box-shadow: 10px 10px 2px rgba(22, 22, 22, 0.8);
+    }
+  }
 }
 
-.reveal h1 {
-  font-size: $fs-large;
+.reveal {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', cursive;
+    color: $text-color;
+  }
+
+  strong, a {
+    color: $counter-accent;
+  }
+}
+.reveal h1, .reveal h2 {
+  font-size: $fs-x-large;
 }
 
 .reveal .controls button {
   color: $accent !important;
+}
+
+.mt-1 {
+  margin-top: 2em !important;
+}
+
+.mt-2 {
+  margin-top: 4em !important;
+}
+
+.mt-3 {
+  margin-top: 8em !important;
+}
+
+.mt-4 {
+  margin-top: 16em !important;
+}
+
+.list {
+  list-style-type: none !important;
+  font-size: $fs-smallish;
+
+  li {
+    margin-top: .9em;
+    position: relative;
+
+    &:before {
+      font-family: 'Bangers', sans-serif;
+      font-size: $fs-large;
+      content: "!";
+      position: absolute;
+      left: -.5em;
+      top: -.2em;
+      display: block;
+      color: $text-color;
+    }
+  }
+
+  &--left {
+    padding-right: 40%;
+  }
+
+  &--right {
+    padding-left: 40%;
+  }
+}
+
+
+/* BlOCK Illustrations */
+
+.block {
+  &.paul {
+    &:before {
+      background-image: url('./images/paul-meyer-comic.jpg');
+    }
+  }
+
+  &.kernel {
+    &:before {
+      background-image: url('./images/kernel-panic.png');
+    }
+  }
+
+  &.empower {
+    &:before {
+      background-image: url('./images/comics-empower.png');
+    }
+  }
+
+  &.ember {
+    &:before {
+      background-image: url('./images/ember.png');
+    }
+  }
 }

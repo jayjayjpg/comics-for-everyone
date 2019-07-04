@@ -4,7 +4,7 @@ notes: |
 ---
 
 <div class="clearfix center">
- <div class="fragment fade-up block block--long">
+ <div class="fragment fade-up block block--xtra-long covered no-img">
   <h1>Safe Animations</h1>
   <p>⛔️ strobe light effects 🙅‍♀️</p>
  </div>
