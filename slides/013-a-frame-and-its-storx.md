@@ -3,17 +3,18 @@ notes: |
   Title Slide: Comics for Literally Everyone
 ---
 
-## Screenreader Driven Story Telling <!-- .element:  -->
+## Background Images Are Invisible <!-- .element:  -->
 
 <div class="clearfix">
   <div class="left" style="width:30%">
     <img width="200" height="218" alt="Single frame from Diamanias comic: A person struggles to keep their balance on a boat on stormy sea. They shout: Noooo!" src="/assets/images/black.png" />
   </div>
   <div class="right" style="width:70%">
-    <ul>
-      <li class="fragment fade-up" >use descriptive <code>alt</code> attributes or <code>aria-label</code>s  for imagery</li>
-      <li class="fragment fade-up" >use semantic HTML for embedding spoken text and onomatopoeia</li>
-    </ul>
+    <pre ><code class="html" data-line-numbers="1-4" data-trim>// comic.html
+&lt;article class="comic-panel"
+  style="background-image: url('/images/boat.png');"&gt;
+&lt;/article&gt;
+</code></pre>
   </div>
 </div>
 

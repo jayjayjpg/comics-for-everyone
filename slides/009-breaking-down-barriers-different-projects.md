@@ -3,7 +3,7 @@ notes: |
   But maybe you actually didn't.
 ---
 
-## Making Comic Books Accessible
+<h2 >Making Comic Books Accessible</h2>
 
 <div style="position: relative;" class="flex center">
   <article style="display: flex; flex-direction: column; height: 50vh; justify-content: space-between;">

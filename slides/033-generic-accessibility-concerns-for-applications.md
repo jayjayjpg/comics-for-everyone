@@ -1,6 +1,7 @@
 ---
 notes: |
-  Title Slide: Comics for Literally Everyone
+  97.8% of home pages had detectable WCAG 2 failures! These are only automatically detectable errors that align with WCAG conformance failures with a high level of reliability. Because automatically detectable errors constitute a small portion of all possible WCAG failures, this means that the actual WCAG 2 A/AA conformance level for the home pages for the most commonly accessed web sites is very low, perhaps below 1%.
+  Web Accessibility in Mind Working Group
 ---
 
 # Rethinking Accessibility of Web Applications

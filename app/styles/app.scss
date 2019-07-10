@@ -158,11 +158,15 @@ body {
   }
 
   &--xtra-long {
-    width: 100%;
+    width: 90%;
   }
 
   &--full-height {
     height: 60vh;
+  }
+
+  &--some-height {
+    height: 30vh;
   }
 }
 
@@ -395,6 +399,20 @@ body {
   &.ember {
     &:before {
       background-image: url('./images/ember.png');
+    }
+  }
+
+  &.blogjj {
+    &:before {
+      background-image: url('./images/blogjj.png');
+      background-position: center 0;
+    }
+  }
+
+  &.axe {
+    &:before {
+      background-image: url('./images/axe.png');
+      background-position: center 0;
     }
   }
 }

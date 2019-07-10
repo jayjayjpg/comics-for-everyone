@@ -1,6 +1,6 @@
 ---
 notes: |
-  Title Slide: Comics for Literally Everyone
+1,000,000 of the most popular home pages on the internet have been analyzed using an accessibility analysis API: https://wave.webaim.org/standalone
 ---
 
 # Rethinking Accessibility of Web Applications

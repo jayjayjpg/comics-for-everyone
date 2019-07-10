@@ -5,8 +5,8 @@ notes: |
 
 <div class="clearfix">
   <div class="block block--xtra-long block--full-height fs-small">
-    <h3 class="fs-medium topish bubble tall fragment fade-up">Print comics require readers...</h3>
-    <ul class="mt-3">
+    <h3 class="fs-medium topish bubble tall fragment fade-up" >Print comics require readers...</h3>
+    <ul class="mt-1">
     </ul>
   </div>
 </div>
