@@ -10,11 +10,25 @@ $fs-small: 0.9em;
 $fs-x-small: 0.7em;
 $fs-xx-small: 0.5em;
 
-$accent: #efccef;
-$counter-accent: #4444aa;
-$grey: #EDDEA4;
-$old-grey: #EEDFA5;
-$text-color: #160F29;
+
+/* Light Theme */
+$bg1: #EDDEA4;
+$bg2: #EEDFA5;
+$text1: #160F29;
+$accent1: #efccef;
+
+/* Dark Theme */
+$bg3: #160F29;
+$bg4: #444499;
+$text2: #efefef;
+$accent2: #70163C;
+$accent3: #95B2B8;
+
+$accent: $accent2;
+$counter-accent: $accent3;
+$grey: $bg3;
+$old-grey: $bg4;
+$text-color: $text2;
 $frame-border-color: #efefef;
 
 body {
@@ -130,6 +144,7 @@ body {
 
   &.covered {
     background-color: $accent;
+    color: $text-color;
 
     &:before {
       content: "";
@@ -221,7 +236,7 @@ body {
   padding: 3em 1.5em;
   border-radius: 55% 60% 50% 50% / 60% 60% 40% 40%;
   border: 3px solid #212121;
-  color: #212121;
+  color: $text1 !important;
   font-size: $fs-small;
   position: absolute;
   bottom: -2em;
@@ -229,6 +244,10 @@ body {
   z-index: 99;
   text-align: center;
   font-family: 'Permanent Marker', cursive !important;
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: $text1;
+  }
 
   &.top {
     top: -1em;
@@ -267,13 +286,13 @@ body {
 .demo-font-1 {
   animation: grow ease-in 2s;
   animation-fill-mode: forwards;
-  color: $counter-accent;
+  color: $text-color;
 }
 
 .demo-font-2 {
   animation: contrastier ease-in 4s;
   animation-fill-mode: forwards;
-  color: #eaeaea;
+  color: $text-color;
 }
 
 @keyframes grow {
@@ -287,10 +306,10 @@ body {
 
 @keyframes contrastier {
   0% {
-    color: #eaeaea;
+    color: $old-grey;
   }
   100% {
-    color: #484848;
+    color: $text-color;
   }
 }
 
@@ -315,6 +334,14 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Bangers', cursive;
     color: $text-color;
+  }
+
+  li, p {
+    color: $text-color;
+  }
+
+  code:not(.hljs) {
+    background-color: $accent;
   }
 
   strong, a {
